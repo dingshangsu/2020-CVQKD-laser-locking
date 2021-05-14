@@ -20,8 +20,13 @@ import numpy as np
 import csv
 import time
 from coremorrow_control import CoremorrowControl
+import logging
 
-
+logging.basicConfig(level=logging.INFO,
+                        format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+                        datefmt='%a, %d %b %Y %H:%M:%S',
+                        filename='./log/AOM_Control.log',
+                        filemode='w')
 class MyMainForm(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
         super(MyMainForm, self).__init__(parent)
@@ -107,6 +112,7 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
             pzt_flag = 1
 
         # print("pzt_flag", pzt_flag)
+        logging.info("fre_to_v = " + str(fre_to_v))
         return abs(fre_to_v), pzt_flag
 
     def get53230A(self):
@@ -161,7 +167,7 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
 
     def pzt_change_frequency_AOM(self):
         self.send_pzt_command(self.Vpzt)
-        # logging.info(' Vpzt  = ' + str(Vpzt))
+        logging.info(' Vpzt  = ' + str(self.Vpzt))
         self.CEIC_26_AOM.controlAOM()
 
     def laser_lock(self):
@@ -179,7 +185,8 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
                 print('distance_frequency', self.distance_frequency)
                 print('delta_fre_to_baseline', delta_fre_to_baseline)
                 if delta_fre_to_baseline > self.fre_to_v or delta_fre_to_baseline < -self.fre_to_v:
-                    # logging.info(' pzt  change')
+                    logging.info(' pzt  change')
+                    logging.info('befor pzt change, AOM.control_frequency = ' + str(self.CEIC_26_AOM.control_frequency))
                     if self.flag_pzt == 0:
                         if delta_fre_to_baseline > 0:
                             self.Vpzt -= 0.1
@@ -202,10 +209,11 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
                             free_frequency -= self.fre_to_v
 
                     self.pzt_change_frequency_AOM()
+                    logging.info('after pzt change, AOM.control_frequency = ' + str(self.CEIC_26_AOM.control_frequency))
                     # logging.info(' Vpzt  = ' + str(Vpzt))
                     if self.Vpzt <= 0 or self.Vpzt >= 5:
-                        # logging.info(' Vpzt  = ' + str(Vpzt))
-                        # logging.info('sys.exit')
+                        logging.info(' Vpzt  = ' + str(self.Vpzt))
+                        logging.info('sys.exit')
                         sys.exit()
 
                 else:
