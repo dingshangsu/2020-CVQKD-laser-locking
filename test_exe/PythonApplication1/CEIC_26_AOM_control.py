@@ -37,26 +37,26 @@ class CEIC_26_AOM_control(object):
             self.__control_frequency_commond = self.__control_frequency_commond
         elif len_control_frequency_commond ==7:
             self.__control_frequency_commond = '{:x}'.format(0x0) + self.__control_frequency_commond
-        elif len_b ==6:
+        elif len_control_frequency_commond ==6:
             self.__control_frequency_commond = 2 * '{:x}'.format(0x0) + self.__control_frequency_commond
-        elif len_b ==5:
+        elif len_control_frequency_commond ==5:
             self.__control_frequency_commond = 3 * '{:x}'.format(0x0) + self.__control_frequency_commond
-        elif len_b ==4:
+        elif len_control_frequency_commond ==4:
             self.__control_frequency_commond = 4 * '{:x}'.format(0x0) + self.__control_frequency_commond
-        elif len_b ==3:
+        elif len_control_frequency_commond ==3:
             self.__control_frequency_commond = 5 * '{:x}'.format(0x0) + self.__control_frequency_commond
-        elif len_b ==2:
+        elif len_control_frequency_commond ==2:
             self.__control_frequency_commond = 6 * '{:x}'.format(0x0) + self.__control_frequency_commond
         else:
             self.__control_frequency_commond = 7 * '{:x}'.format(0x0) + self.__control_frequency_commond
         self.__crc16_hex = '{:x}'.format(0xA55A5AA5) + '{:x}'.format(0x0) + '{:x}'.format(0x1) + '{:x}'.format(0x0) + '{:x}'.format(0x1) + self.__control_frequency_commond + '{:x}'.format(0x3) + '{:x}'.format(0xff1) + '{:x}'.format(0x5AA5A55A)
         self.__crc16_commond = self.caculate_crc16()
         len_crc16_commond = len(self.__crc16_commond)
-        if len_c == 4:
+        if len_crc16_commond == 4:
             self.__crc16_commond = self.__crc16_commond
-        elif len_c ==3:
+        elif len_crc16_commond ==3:
             self.__crc16_commond = '{:x}'.format(0x0) + self.__crc16_commond
-        elif len_c == 2:
+        elif len_crc16_commond == 2:
             self.__crc16_commond = 2 * '{:x}'.format(0x0) + self.__crc16_commond
         else:
             self.__crc16_commond = 3 * '{:x}'.format(0x0) + self.__crc16_commond
