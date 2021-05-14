@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f284370-380c-4c70-8e76-e70e61c8281a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/2020-CVQKD-laser-locking.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_exe/PythonApplication1/coremorrow_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_exe/PythonApplication1/CEIC_26_AOM_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_exe/PythonApplication1/CEIC_26_AOM_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_exe/PythonApplication1/call_laserlocking.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_exe/PythonApplication1/call_laserlocking.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,18 +19,20 @@
     <leaf>
       <file leaf-file-name="laserlocking.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_exe/PythonApplication1/laserlocking.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1154" />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="CEIC_26_AOM_control.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CEIC_26_AOM_control.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_exe/PythonApplication1/CEIC_26_AOM_control.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+            <state relative-caret-position="-266">
+              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#1284#2158#1" />
-                <element signature="e#2741#3031#1" />
+                <element signature="e#1563#2497#1" />
+                <element signature="e#3091#3409#1" />
               </folding>
             </state>
           </provider>
@@ -82,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="call_laserlocking.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="call_laserlocking.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_exe/PythonApplication1/call_laserlocking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-650">
+            <state relative-caret-position="-494">
               <caret line="145" column="55" lean-forward="true" selection-start-line="145" selection-start-column="55" selection-end-line="145" selection-end-column="55" />
               <folding>
                 <element signature="e#211#221#0" expanded="true" />
@@ -103,8 +99,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test_exe/PythonApplication1/CEIC_26_AOM_control.py" />
         <option value="$PROJECT_DIR$/test_exe/PythonApplication1/call_laserlocking.py" />
+        <option value="$PROJECT_DIR$/test_exe/PythonApplication1/CEIC_26_AOM_control.py" />
       </list>
     </option>
   </component>
@@ -117,7 +113,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1299" />
@@ -217,16 +213,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32889965" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.329602" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.27238807" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19899786" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.27238807" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19899786" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="SciView" />
@@ -288,9 +283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_exe/PythonApplication1/laserlocking.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/PY/cycle_reading_53220.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -325,25 +317,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_exe/PythonApplication1/CEIC_26_AOM_control.py">
+    <entry file="file://$PROJECT_DIR$/test_exe/PythonApplication1/laserlocking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#1284#2158#1" />
-            <element signature="e#2741#3031#1" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1154" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_exe/PythonApplication1/call_laserlocking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-650">
+        <state relative-caret-position="-494">
           <caret line="145" column="55" lean-forward="true" selection-start-line="145" selection-start-column="55" selection-end-line="145" selection-end-column="55" />
           <folding>
             <element signature="e#211#221#0" expanded="true" />
             <element signature="e#10696#11542#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_exe/PythonApplication1/CEIC_26_AOM_control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1563#2497#1" />
+            <element signature="e#3091#3409#1" />
           </folding>
         </state>
       </provider>
